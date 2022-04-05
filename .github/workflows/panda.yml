@@ -26,7 +26,7 @@ env:
   Rec_url: https://github.com/minimal-manifest-twrp/platform_manifest_twrp_aosp -b twrp-11
   device: PDA
   DT_url: https://github.com/momenabdulrazek/android_device_Nokia_PDA
-  DT_path: device/Nokia/Panda
+  DT_path: device/hmd/PDA
   target: bootimage
   WorkSpace: WorkSpace
   TZ: Cairo/Egypt
