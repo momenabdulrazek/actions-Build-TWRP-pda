@@ -24,7 +24,7 @@ env:
   Rec_name: TWRP11
   Rec_ver: 3.5.2 
   Rec_url: https://github.com/minimal-manifest-twrp/platform_manifest_twrp_aosp -b twrp-11
-  device: pda
+  device: PDA
   DT_url: https://github.com/momenabdulrazek/android_device_Nokia_PDA
   DT_path: device/Nokia/Panda
   target: bootimage
