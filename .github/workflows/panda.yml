@@ -24,9 +24,9 @@ env:
   Rec_name: PBRP
   Rec_ver: 3.0.0
   Rec_url: https://github.com/PitchBlackRecoveryProject/manifest_pb.git -b android-10.0
-  device: PDA
-  DT_url: https://github.com/momenabdulrazek/android_device_Nokia_PDA -b master
-  DT_path: device/hmd/PDA
+  device: RMX1821
+  DT_url: https://github.com/fawazahmed0/android_device_Realme3_RMX1821
+  DT_path: device/Realme/RMX1821
   target: bootimage
   WorkSpace: WorkSpace
   TZ: Cairo/Egypt
@@ -75,7 +75,7 @@ jobs:
           cd ${{env.WorkSpace}}
           git clone ${{ env.DT_url }} --depth=1 --single-branch ${{ env.DT_path }}
           cd ${{ env.DT_path }}
-          sed -i 's/vendor\/omni/vendor\/twrp/g' omni_${{ env.device }}.mk
+          sed -i 's/vendor\/omni/vendor\/twrp/g' ${{ env.device }}.mk
           # rm -r recovery/root/system/lib64
           # rm -r recovery/root/system/bin
 
@@ -113,7 +113,7 @@ jobs:
           cd ${{env.WorkSpace}}
           source build/envsetup.sh
           export ALLOW_MISSING_DEPENDENCIES=true
-          lunch omni_${{ env.device }}-eng
+          lunch ${{ env.device }}-eng
           repo sync -j4
           mka ${{env.target}}
         shell: bash
