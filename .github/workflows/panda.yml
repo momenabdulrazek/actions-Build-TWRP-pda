@@ -1,4 +1,4 @@
-name: TWRP11 Builder
+name: PBRP Builder
 
 on:
   #  release:
@@ -21,8 +21,8 @@ on:
   #   types: [started]
 
 env:
-  Rec_name: TWRP11
-  Rec_ver: 3.5.2 
+  Rec_name: PBRP
+  Rec_ver: 3.0.0
   Rec_url: https://github.com/PitchBlackRecoveryProject/manifest_pb.git -b android-10.0
   device: PDA
   DT_url: https://github.com/momenabdulrazek/android_device_Nokia_PDA -b master
