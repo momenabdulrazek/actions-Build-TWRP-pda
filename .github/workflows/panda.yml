@@ -23,7 +23,7 @@ on:
 env:
   Rec_name: TWRP11
   Rec_ver: 3.5.2 
-  Rec_url: https://github.com/minimal-manifest-twrp/platform_manifest_twrp_aosp -b twrp-11
+  Rec_url: https://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni -b twrp-10-deprecated
   device: PDA
   DT_url: https://github.com/momenabdulrazek/android_device_Nokia_PDA -b master
   DT_path: device/hmd/PDA
