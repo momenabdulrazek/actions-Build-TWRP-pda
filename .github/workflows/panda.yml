@@ -23,11 +23,11 @@ on:
 env:
   Rec_name: PBRP
   Rec_ver: 3.0.0
-  Rec_url: https://github.com/PitchBlackRecoveryProject/manifest_pb.git -b android-10.0
-  device: RMX1821
-  DT_url: https://github.com/fawazahmed0/android_device_Realme3_RMX1821
-  DT_path: device/Realme/RMX1821
-  target: bootimage
+  Rec_url: https://github.com/PitchBlackRecoveryProject/manifest_pb.git -b android-11.0
+  device: begonia
+  DT_url: https://github.com/RC1844/twrp_redmi_begonia -b MIUI-android-11.0
+  DT_path: device/redmi/begonia
+  target: recoveryimage
   WorkSpace: WorkSpace
   TZ: Cairo/Egypt
   Author: Momen_Abdulrazek
@@ -75,7 +75,7 @@ jobs:
           cd ${{env.WorkSpace}}
           git clone ${{ env.DT_url }} --depth=1 --single-branch ${{ env.DT_path }}
           cd ${{ env.DT_path }}
-          sed -i 's/vendor\/omni/vendor\/twrp/g' ${{ env.device }}.mk
+          sed -i 's/vendor\/omni/vendor\/twrp/g' twrp_${{ env.device }}.mk
           # rm -r recovery/root/system/lib64
           # rm -r recovery/root/system/bin
 
