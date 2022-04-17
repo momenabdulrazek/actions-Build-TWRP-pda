@@ -23,10 +23,10 @@ on:
 env:
   Rec_name: TWRP11
   Rec_ver: 3.6.0
-  Rec_url: https://github.com/minimal-manifest-twrp/platform_manifest_twrp_aosp -b twrp-11
+  Rec_url: https://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni.git -b twrp-9.0
   device: PDA
-  DT_url: https://github.com/momenabdulrazek/android_device_nokia_pda.git
-  DT_path: device/PDA
+  DT_url: https://github.com/twrpdtgen/android_device_hmd_PDA.git
+  DT_path: device/hmd/PDA
   ProductFileHeader: twrp
   target: recoveryimage
   WorkSpace: WorkSpace
